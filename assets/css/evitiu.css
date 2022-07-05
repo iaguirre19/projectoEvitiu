@@ -6,7 +6,7 @@
     --backgroundsecundario:#073653;
     --fontPrimario:'Heebo', sans-serif;
     --fontSecundary:'Mulish', sans-serif;
-    --colorcajasgris:rgba(151, 151, 151, 0.817);
+    --colorcajasgris:#c7c5c5;
     --home-gradient: linear-gradient(101.63deg, #149cab -21.52%, #061475 52.33%, #3e119c 97.62%);
 }
 /**Globales**/
@@ -67,8 +67,8 @@ li{
 }
 .bx-menu{
     color: black;
-    /* left: 90%; */
-    /* top: 1.5rem; */
+    left: 90%;
+    top: 1.5rem;
     font-size: 3.5rem;
     height: 4rem;
     width: 4rem;
@@ -212,7 +212,7 @@ li{
     opacity: 0.2;
     width: 8rem;
     position: relative;
-    left: 2rem;
+    left: 1rem;
 
 }
 .main-container-up .animation-up div:nth-child(2){
@@ -227,7 +227,7 @@ li{
     grid-column: 2/3;
 }
 .main-container-up .animation-up div:nth-child(4) {
-    background-color: var(--backgroundsecundario);
+    /* background-color: var(--backgroundsecundario); */
     position: relative;
     right: 18rem;
     bottom: 3rem;
@@ -249,9 +249,9 @@ li{
 .main-container-up .animation-up .imgUp2 {
     position: relative;
     top: 28rem;
-    left: 1rem;
+    left: 2rem;
     opacity: 0.2;
-    width: 10rem;
+    width: 5rem;
 }
 .main-container-up .animation-up .imgUp3 {
     opacity: 0.2;
