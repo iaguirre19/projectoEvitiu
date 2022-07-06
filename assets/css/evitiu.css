@@ -51,7 +51,8 @@ li{
     text-align: center; 
     border: none;
     border-radius: 1rem;
-    width: 50%; 
+    width: 50%;
+    height: 5rem;
     margin: 0 auto;
 }
 .btn:hover {
