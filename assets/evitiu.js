@@ -1,6 +1,7 @@
 const btn = document.querySelector("#btn");
 const aboutBtn = document.querySelector("#about");
 const servicesBtn = document.querySelector("#servicesLink");
+const contactUs = document.querySelector("#contact")
 const navbar = document.querySelector(".header-nav");
 const btn2 = document.querySelector("#btn2");
 const number = document.getElementById("number");
@@ -19,7 +20,9 @@ aboutBtn.onclick = function(){
 servicesBtn.onclick = function () {
     navbar.classList.remove("active");
 };
-
+contactUs.onclick = function (){
+    navbar.classList.remove("active");
+};
 
 let cantidad = 0;
 let time = setInterval(() => {

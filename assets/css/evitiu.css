@@ -40,10 +40,27 @@ img{
 li{
     list-style: none;
 }
-.container{
-    max-width: 120rem;
+.btn {
+    background-color: var(--backgroundprimario); 
+    display: block; 
+    color: #fff; 
+    text-transform: uppercase; 
+    font-weight: 900;
+    padding: 1rem; 
+    transition: background-color .3s ease-in-out;   
+    text-align: center; 
+    border: none;
+    border-radius: 1rem;
+    width: 50%; 
     margin: 0 auto;
-    position: relative;
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 .5rem .8rem .2rem rgba(10, 137, 255, 0.5);
+}
+.container{
+    max-width: 99%;
+    margin: 0 auto;
 }
 .gray-box{
     width: 5.3rem;
@@ -490,10 +507,10 @@ li{
 .services-section{
     /* background-color: #061475; */
     width: 80%;
-    height: 90rem;
+    height: 130rem;
     display: grid;
     place-items: center;
-    margin: 5rem auto;
+    margin: 5rem auto 0;
 }
 .services-section h2{
     font-size: 3rem;
@@ -529,6 +546,172 @@ li{
     font-size: 1.5rem;
     color: #6a6a6a;
 }
+/* Formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    max-width: 98%;
+    height: 60rem;
+}
+.formulario h2{
+    font-size: 2.5rem;
+    padding: 2rem 0;
+    margin-bottom: -5;
+}
+input,
+textarea {
+    font-family: inherit;
+  /* 1 */
+    font-size: 100%;
+  /* 2 */
+    margin: 0;
+  /* 3 */
+    box-sizing: border-box;
+}
+
+label {
+    box-sizing: border-box;
+}
+
+textarea {
+    overflow: auto;
+  /* 1 */
+    vertical-align: top;
+
+  /* 2 */
+}
+
+input[type=email],
+input[type=text] {
+    width: 28rem;
+    background-color: white;
+    height: calc(3em + 2px);
+    padding: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid #cccccc;
+    border-radius: 1.2rem;
+    transition: all 0.2s ease-out;
+    box-shadow: none;
+    resize: none;
+    outline: none;
+}
+input[type=email]:hover,
+input[type=text]:hover {
+    border: 1px solid #cccccc;
+}
+input[type=email]:focus, input[type=email]:active,
+input[type=text]:focus,
+input[type=text]:active {
+    border: 1px solid var(--backgroundprimario);
+}
+input[type=email]:focus + label:before, input[type=email]:active + label:before,
+input[type=text]:focus + label:before,
+input[type=text]:active + label:before {
+    color: var(--backgroundsecundario);
+}
+input[type=email] + label,
+input[type=text] + label {
+    display: block;
+    font-size: 1.2rem;
+    height: 3em;
+    line-height: 3em;
+    margin-top: calc(-3em - 5px);
+    margin-bottom: 1em;
+    pointer-events: none;
+}
+input[type=email] + label:before,
+input[type=text] + label:before {
+    content: attr(placeholder);
+    display: inline-block;
+    color: #999999;
+    margin: 0 calc(1em + 2px);
+    white-space: nowrap;
+    transition-property: transform, color;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    transition-timing-function: ease-out;
+    transform-origin: left center;
+}
+input[type=email]:focus + label:before, input[type=email].active + label:before, input[type=email]:valid + label:before,
+input[type=text]:focus + label:before,
+input[type=text].active + label:before,
+input[type=text]:valid + label:before {
+    background: white;
+    line-height: 1;
+    padding: 0 1.5px;
+    transform: translateY(calc(-3em / 2 - 1px/2)) scale(0.8, 0.8);
+}
+input[type=email]:valid,
+input[type=text]:valid {
+    border: 1px solid #23a045;
+}
+input[type=email]:valid + label:before,
+input[type=text]:valid + label:before {
+    content: attr(alt);
+    color: #23a045;
+}
+
+textarea {
+    width: 28rem;
+    background-color: white;
+    height: calc(18em + 2px);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 1rem;
+    transition: all 0.2s ease-out;
+    box-shadow: none;
+    resize: none;
+    outline: none;
+}
+textarea:hover {
+    border: 1px solid #cccccc;
+}
+textarea:focus, textarea:active {
+    border: 1px solid var(--backgroundprimario);
+}
+textarea:focus + label:before, textarea:active + label:before {
+    color: var(--backgroundsecundario);
+}
+textarea + label {
+    display: block;
+    font-size: 1.5rem;
+    height: calc(18em + 2px);
+    line-height: 1;
+    padding-top: calc(1em + 1px);
+    margin-top: -27rem;
+    margin-bottom: 1em;
+    pointer-events: none;
+}
+textarea + label:before {
+    content: attr(placeholder);
+    display: inline-block;
+    color: #999999;
+    margin: 0 calc(1em + 2px);
+    white-space: nowrap;
+    transition-property: transform, color;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    transition-timing-function: ease-out;
+    transform-origin: left center;
+}
+textarea:focus + label:before, textarea.active + label:before, textarea:valid + label:before {
+    background: white;
+    line-height: 1;
+    padding: 0 1.5px;
+    transform: translateY(calc((-1em - 0.5em) - 0.5px)) scale(0.8, 0.8);
+}
+textarea:valid {
+    border: 1px solid #23a045;
+}
+textarea:valid + label:before {
+    content: attr(alt);
+    color: #23a045;
+}
+
 
 
 

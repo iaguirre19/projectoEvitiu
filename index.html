@@ -25,7 +25,7 @@
             <li><a id="about" href="#aboutUs">About Us</a></li>
             <li><a id="servicesLink" href="#servicesSection">Services</a></li>
             <li><a href="">Works</a></li>
-            <li><a href="">Contact US</a></li>
+            <li><a id="contact" href="#form">Contact US</a></li>
             <!-- <i class='bx bx-menu' id="btn2"></i> -->
             <i class='bx bx-x' id="btn2" ></i>
             <img class="evitiu-logo" src="https://img1.wsimg.com/isteam/ip/e59ecd71-52b1-45e8-b137-11c78080a61c/Logo_201.png/:/rs=w:123,h:82,cg:true,m/cr=w:123,h:82/qt=q:95" alt="icono de evitiu">
@@ -113,9 +113,17 @@
                 </div>
             </div>
         </section>
-        <section class="container formulario">
-            <form action="">
-                
+        <section class="container formulario" id="form">
+            <h2>Get in touch with Us</h2>
+            <form action="#">
+                <input type="text" required>
+                <label for="" placeholder="Your Full Name" alt="Full Name"></label>
+                <input type="email" required>
+                <label for="" placeholder="Your Email Address" alt="Email"></label>
+                <textarea required></textarea>
+                <label for="" placeholder="Your Message" alt="Message"></label>
+            
+                <input class="btn" type="submit" value="Send">
             </form>
         </section>
     </main>
